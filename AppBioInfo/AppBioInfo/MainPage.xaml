@@ -14,7 +14,7 @@
                     FontAttributes="Bold"
                     TextColor="Red"
                     Margin="0,15,0,0" />
-
+ 
             <Label  Text="Inserisci la prima stringa"
                     Padding="25,15,0,0"
                     TextColor="Black"/>
