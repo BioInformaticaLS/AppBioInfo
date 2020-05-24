@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppBioInfo.MainPage">
+    <ScrollView HeightRequest="7000">
+        <StackLayout BackgroundColor="LightBlue">
+            <!-- Place new controls here -->
+            <Label  Text="BIOINFORMATICA" 
+                    HorizontalOptions="Center"
+                    FontSize="Title"
+                    FontAttributes="Bold"
+                    TextColor="Red"
+                    Margin="0,15,0,0" />
+
+            <Label  Text="Inserisci la prima stringa"
+                    Padding="25,15,0,0"
+                    TextColor="Black"/>
+            <Entry  Placeholder="Inserisci la prima stringa"
+                    x:Name="EntrySensibile"
+                    PlaceholderColor="Black"
+                    TextColor="Black"
+                    ReturnType="Next"
+                    ClearButtonVisibility="WhileEditing"
+                    Margin="20,0,30,0"/>
+
+            <Label  Text="Inserisci la seconda stringa"
+                    Padding="25,15,0,0"
+                    TextColor="Black"/>
+            <Entry Placeholder="Inserisci la seconda stringa"
+                    x:Name="EntryResistente"
+                    PlaceholderColor="Black"
+                    TextColor="Black"
+                    ReturnType="Next"
+                    ClearButtonVisibility="WhileEditing"
+                    Margin="20,0,30,0"/>
+
+            <Button Text="CALCOLA"
+                    FontSize="Title"
+                    FontAttributes="Bold"
+                    Margin="20,0,0,0"
+                    TextColor="Black"
+                    VerticalOptions="Start"
+                    HorizontalOptions="StartAndExpand"
+                    Clicked="Calcola_Clicked"/>
+
+            <Button Text="RESET"
+                    FontSize="Title"
+                    FontAttributes="Bold"
+                    Margin="0,-58,30,0"
+                    TextColor="Black"
+                    VerticalOptions="Start"
+                    HorizontalOptions="EndAndExpand"
+                    Clicked="Reset_Clicked"/>
+
+            <Label  Text=""
+                    x:Name="LblLunghezza1"
+                    FontSize="Body"
+                    TextColor="Black"
+                    Padding="25,15,25,0"/>
+
+            <Label  Text=""
+                    x:Name="LblLunghezza2"
+                    FontSize="Body"
+                    TextColor="Black"
+                    Padding="25,15,25,0"/>
+
+            <Label  Text=""
+                    x:Name="LblDifferenza"
+                    FontSize="Body"
+                    TextColor="Black"
+                    Padding="25,15,25,0"/>
+
+            <Label  Text=""
+                    x:Name="LblParteUguale"
+                    FontSize="Body"
+                    TextColor="Black"
+                    Padding="25,15,25,0"/>
+
+            <Label  Text=""
+                    x:Name="LblNumeroCaratteriUguali"
+                    FontSize="Body"
+                    TextColor="Black"
+                    Padding="25,15,25,0"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
